@@ -60,6 +60,10 @@ cpu = [
 gpu = [
     "torch==2.9.1",
 ]
+mlx = [
+    "mlx>=0.25; sys_platform == 'darwin' and platform_machine == 'arm64'",
+    "numpy>=1.26",
+]
 
 [tool.uv]
 default-groups = []
